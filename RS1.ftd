@@ -1,0 +1,2818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Zusi>
+  <Info DateiTyp="Fuehrerstand" MinVersion="A.1" Version="A.1">
+    <AutorEintrag AutorBeschreibung="Hintergrundbild: Jan Bulin, 3D-Schaltermodelle: nonesense" AutorID="36" AutorName="Johannes Jung"/>
+    <AutorEintrag AutorEmail="ameschede@gmx.de" AutorID="33" AutorName="Alwin Meschede"/>
+  </Info>
+  <Fuehrerstand>
+    <Funktionalitaeten>
+      <Kombischalter FktName="Richtungsschalter" Grundstellung="2" Mittelposition="1" NameSchalter="LM/Taster Fahrtrichtung" Tastaturzuordnung="7">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Drucktaster_rastend.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="RischaR"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Rischa0"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Fahrschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="RischaV"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Fahrschalter" Grundstellung="6" Mittelposition="6" NameSchalter="Fahrschalter" Tastaturzuordnung="1">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Fahrschalter\Fahrschalter_M5150_F.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="HllBremsen"/>
+          <Belegung FunktionStr="DynBremsenull"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter" RastenNummer="1"/>
+        </Raste>
+        <Raste SperrZeit="0.3" SperreRunter="1">
+          <Belegung FunktionStr="ComputerBremseX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter" RastenNummer="1"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="ComputerBremseX" Parameter="0.8"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="ComputerBremseX" Parameter="0.6"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="ComputerBremseX" Parameter="0.5"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="ComputerBremseX" Parameter="0.4"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste SperrZeit="0.3" SperreRauf="1" SperreRunter="1">
+          <Belegung FunktionStr="Fahrstufe"/>
+          <Belegung FunktionStr="ComputerBremseX"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="0.1429"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="0.2857"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="0.4286"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="0.5714"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="0.7143"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="0.8571"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="Fahrstufe" Parameter="1"/>
+          <Belegung FunktionStr="WandlerfuellungX" Parameter="1"/>
+          <Koppelung Koppelart="Koppelart_Verriegeln" NameGekoppelterSchalter="Richtungsschalter"/>
+        </Raste>
+      </Kombischalter>
+      <PZB90I60R_V20 FktName="PZB90/I60R - V2.0" IndusiGrenzdruckHL="2.2" LM1000Hz="LM PZB 1000 Hz" LM500Hz="LM PZB 500 Hz" LMBefehl="LM PZB Befehl" LMZugartM="LM PZB Zugart M" LMZugartO="LM PZB Zugart O" LMZugartU="LM PZB Zugart U" SchalterBefehl="PZB Befehl" SchalterFrei="PZB Frei" SchalterWachsam="PZB Wachsam" Tastaturzuordnung="15">
+        <SoundIndusiHupe Lautstaerke="1" Loop="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Zugbeeinflussung\PZB_LZB\PZB_Hupe.wav"/>
+        </SoundIndusiHupe>
+        <IndusiErsatzzugdaten BRA="8" BRH="165" Lufthahn="2" PZBStoerschalter="2" TfNummer="-" ZugsicherungHS="2"/>
+      </PZB90I60R_V20>
+      <Pfeife FktName="Pfeife/Glocke" NameSchalter="Horn" Tastaturzuordnung="12" Taster="1">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Tastschalter.wav"/>
+        </RastSound>
+        <SoundTief Lautstaerke="1" Loop="1" PosAnlauf="10912" PosAuslauf="32994">
+          <Datei Dateiname="RollingStock\Deutschland\Epoche3\Dieselloks\BRD\V100_Familie\Sound\212_Pfeife.wav"/>
+        </SoundTief>
+      </Pfeife>
+      <TuerenTAV FktName="Tuersystem TAV" LMLi="LM Tueren links offen" LMRe="LM Tueren rechts offen" LMZwangsschliessen="LM/Taster Tueren zwangsschliessen" LMinvers="1" NameDrehSchalter="Tuerschalter" OhneFreigabe="1" Tastaturzuordnung="10">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Drehschalter.wav"/>
+        </RastSound>
+      </TuerenTAV>
+      <Sifa_ZeitZeit FktName="Zeit-Zeit-Sifa" NameLM="LM Sifa" NameSchalter="Sifa" Tastaturzuordnung="16" Taster="1">
+        <SoundSifa Lautstaerke="1" Loop="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Sifa\Sifa.wav"/>
+        </SoundSifa>
+      </Sifa_ZeitZeit>
+      <Kombischalter FktName="Sander" Grundstellung="1" Mittelposition="1" NameSchalter="Sanden" Tastaturzuordnung="9">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="Sanden" Parameter="1"/>
+        </Raste>
+        <Raste/>
+        <Raste>
+          <Belegung FunktionStr="Sanden" Parameter="1"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Beschallung" Grundstellung="2" Mittelposition="2" NameSchalter="Beschallung">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Scheibenwischer" Grundstellung="2" Mittelposition="2" NameSchalter="Scheibenwischer">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Federspeicher" Mittelposition="1" NameSchalter="Federspeicher" Tastaturzuordnung="69" Taster="1">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="FederspeicherLoesen"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="FederspeicherAnlegen"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="FederspeicherLoesen"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Spiegel" Grundstellung="1" Mittelposition="1" NameSchalter="Spiegel">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Lampenpruefung" Grundstellung="1" Mittelposition="1" NameSchalter="Lampenpruefung">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Beleuchtung Fuehrerraum" Grundstellung="1" Mittelposition="1" NameSchalter="Beleuchtung Fuehrerraum">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Beleuchtung innen" Grundstellung="1" Mittelposition="1" NameSchalter="Beleuchtung innen">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Signalbeleuchtung" Grundstellung="1" Mittelposition="1" NameSchalter="Signalbeleuchtung">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste/>
+      </Kombischalter>
+      <Kombischalter FktName="Schienenbremse" Grundstellung="1" Mittelposition="1" NameSchalter="Schienenbremse" Tastaturzuordnung="20">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="MgBremse" Parameter="1"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="MgBremse"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="MgBremse" Parameter="1"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Retarder aus" Grundstellung="1" Mittelposition="1" NameSchalter="Retarder">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="DynBremsenull"/>
+        </Raste>
+        <Raste/>
+        <Raste>
+          <Belegung FunktionStr="DynBremsenull"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Luftpumpen/Getriebe" Grundstellung="1" Mittelposition="1" NameSchalter="Luftpumpen/Getriebe" Tastaturzuordnung="73">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Rastschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="WandlerfuellungX"/>
+        </Raste>
+        <Raste/>
+        <Raste>
+          <Belegung FunktionStr="WandlerfuellungX"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Fst ein/aus" Grundstellung="1" NameSchalter="LM/Taster Fst ein" Tastaturzuordnung="70">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Drucktaster_rastend.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="BatterieHSAus"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="BatterieHSEin"/>
+        </Raste>
+      </Kombischalter>
+      <SchleuderschutzElektr FktName="Electronic wheelslip prevention"/>
+      <Kombischalter FktName="Gruppenschalter" Grundstellung="1" Tastaturzuordnung="18">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Drehschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="GruppenschalterStop"/>
+        </Raste>
+        <Raste>
+          <Belegung FunktionStr="GruppenschalterStart"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FedertOben="1" FedertUnten="1" FktName="Tempomat auf/ab" Grundstellung="1" Mittelposition="1" NameSchalter="Tempomat" Tastaturzuordnung="3">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schalter\Tastschalter.wav"/>
+        </RastSound>
+        <Raste>
+          <Belegung FunktionStr="AFBab"/>
+        </Raste>
+        <Raste/>
+        <Raste>
+          <Belegung FunktionStr="AFBauf"/>
+        </Raste>
+      </Kombischalter>
+      <Kombischalter FktName="Dichtheitsprobe Bremsabschluss" NameSchalter="Dichtheitsprobe Bremsabschluss">
+        <RastSound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Generische_Sounds\Schluesselschalter.wav"/>
+        </RastSound>
+        <Raste/>
+        <Raste/>
+        <Raste>
+          <Belegung FunktionStr="HllMittel"/>
+        </Raste>
+      </Kombischalter>
+      <FuehrerstandSound>
+        <Sound Lautstaerke="0.01" Loop="1">
+          <Datei Dateiname="RollingStock\Deutschland\Epoche3\Reisezugwagen\BRD\n_Wagen_Silberlinge\Sounds\BDnf_Luftstrom.wav"/>
+        </Sound>
+        <Abhaengigkeit LautstaerkeAbh="1" PhysikGroesse="6" TriggerGrenze="0.08">
+          <Kennfeld>
+            <Pkt/>
+            <Pkt PktX="0.08" PktY="1"/>
+            <Stufe StufenWert="1"/>
+          </Kennfeld>
+        </Abhaengigkeit>
+      </FuehrerstandSound>
+      <FuehrerstandSound>
+        <Sound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Epoche6\Elektrotriebwagen\KISS\Sound\kiss_fst_spiegel_ausklappen.wav"/>
+        </Sound>
+        <Abhaengigkeit PhysikGroesse="1" Trigger="3" TriggerGrenze="1">
+          <Kennfeld>
+            <Stufe/>
+          </Kennfeld>
+        </Abhaengigkeit>
+      </FuehrerstandSound>
+      <FuehrerstandSound>
+        <Sound Lautstaerke="1">
+          <Datei Dateiname="RollingStock\Deutschland\Epoche6\Elektrotriebwagen\KISS\Sound\kiss_fst_spiegel_einklappen.wav"/>
+        </Sound>
+        <Abhaengigkeit PhysikGroesse="1" Trigger="1" TriggerGrenze="2">
+          <Kennfeld>
+            <Stufe/>
+          </Kennfeld>
+        </Abhaengigkeit>
+      </FuehrerstandSound>
+      <FuehrerstandSound>
+        <Sound Lautstaerke="0.2" Loop="1">
+          <Datei Dateiname="RollingStock\Deutschland\Epoche3\Reisezugwagen\BRD\n_Wagen_Silberlinge\Sounds\Bnrdzf_Bremsen.wav"/>
+        </Sound>
+        <Abhaengigkeit LautstaerkeAbh="1" PhysikGroesse="3" SoundOperator="2">
+          <Kennfeld>
+            <Pkt/>
+            <Pkt PktX="0.22"/>
+            <Pkt PktX="3.8" PktY="1"/>
+            <Stufe StufenWert="1"/>
+          </Kennfeld>
+        </Abhaengigkeit>
+        <Abhaengigkeit LautstaerkeAbh="1" PhysikGroesse="139" SoundOperator="2">
+          <Kennfeld>
+            <Pkt/>
+            <Pkt PktX="1" PktY="1"/>
+            <Pkt PktX="33.333"/>
+            <Stufe StufenWert="1"/>
+          </Kennfeld>
+        </Abhaengigkeit>
+      </FuehrerstandSound>
+      <NotbremsSystemNBUe2004 FktName="NBÜ 2004" NameLMNotbremsung="-" Tastaturzuordnung="71"/>
+      <Notaus FktName="Notaus" NameSchalter="Nothalt" Tastaturzuordnung="68"/>
+    </Funktionalitaeten>
+    <Grafik>
+      <RenderFlags TexVoreinstellung="2"/>
+      <Grunddaten FtdQualitaet="62" GrafikName="Standardansicht 4:3">
+        <p X="-1.5" Z="2.8419"/>
+        <lookat X="10" Z="2.8419"/>
+        <up Z="10"/>
+      </Grunddaten>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG rechts unten 1" PhysikGroesse="40" Vorkomma="2">
+        <InstrPkt1 X="0.0" Y="0.0"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="-1.994140625" Uur="1.525390625" Vol="-1.6416015625" Vur="0.998046875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.0" Y="1.0"/>
+        <InstrPkt3 X="1.0" Y="1.0"/>
+        <InstrPkt4 X="1.0" Y="0.0"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG links" Vorkomma="2">
+        <InstrPkt1 X="0.0" Y="0.5937846836847946"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0009765625" Uur="0.9990234375" Vol="0.0009765625" Vur="0.537109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="DEUTA Tacho"/>
+        <Ueberdeckend InstrName="GSM-R"/>
+        <Ueberdeckend InstrName="Horn"/>
+        <Ueberdeckend InstrName="LM/Taster Fahrtrichtung"/>
+        <Ueberdeckend InstrName="LM Haltewunsch"/>
+        <Ueberdeckend InstrName="LM PZB 1000 Hz"/>
+        <Ueberdeckend InstrName="LM PZB 500 Hz"/>
+        <Ueberdeckend InstrName="LM PZB Befehl"/>
+        <Ueberdeckend InstrName="LM PZB Zugart M"/>
+        <Ueberdeckend InstrName="LM PZB Zugart O"/>
+        <Ueberdeckend InstrName="LM PZB Zugart U"/>
+        <Ueberdeckend InstrName="LM Tueren geschlossen"/>
+        <Ueberdeckend InstrName="LM Tueren links offen"/>
+        <Ueberdeckend InstrName="LM Tueren rechts offen"/>
+        <Ueberdeckend InstrName="LM/Taster Fst ein"/>
+        <Ueberdeckend InstrName="LM/Taster Tueren zwangsschliessen"/>
+        <Ueberdeckend InstrName="Luftpumpen/Getriebe"/>
+        <Ueberdeckend InstrName="Manometer-Nachtbeleuchtung"/>
+        <Ueberdeckend InstrName="PZB Befehl"/>
+        <Ueberdeckend InstrName="PZB Frei"/>
+        <Ueberdeckend InstrName="PZB Wachsam"/>
+        <Ueberdeckend InstrName="Retarder"/>
+        <Ueberdeckend InstrName="Sanden"/>
+        <Ueberdeckend InstrName="Scheibenwischer"/>
+        <Ueberdeckend InstrName="Tacho-Nachtbeleuchtung"/>
+        <Ueberdeckend InstrName="Tempomat"/>
+        <Ueberdeckend InstrName="Tuerschalter"/>
+        <InstrPkt2 X="0.0" Y="1.0"/>
+        <InstrPkt3 X="0.5671476137624861" Y="1.0"/>
+        <InstrPkt4 X="0.5671476137624861" Y="0.5937846836847946"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG rechts oben" Vorkomma="2">
+        <InstrPkt1 X="0.5671476137624861" Y="0.5937846836847946"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0009765625" Uur="0.7626953125" Vol="0.5380859375" Vur="1.0">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Beleuchtung Fuehrerraum"/>
+        <Ueberdeckend InstrName="Beleuchtung innen"/>
+        <Ueberdeckend InstrName="Beschallung"/>
+        <Ueberdeckend InstrName="Dichtheitsprobe Bremsabschluss"/>
+        <Ueberdeckend InstrName="Ebula links"/>
+        <Ueberdeckend InstrName="Ebula rechts"/>
+        <Ueberdeckend InstrName="Fahrschalter"/>
+        <Ueberdeckend InstrName="Federspeicher"/>
+        <Ueberdeckend InstrName="Lampenpruefung"/>
+        <Ueberdeckend InstrName="LM Bremse angelegt"/>
+        <Ueberdeckend InstrName="LM Bremse geloest"/>
+        <Ueberdeckend InstrName="LM Federspeicherbremse"/>
+        <Ueberdeckend InstrName="LM Schienenbremse"/>
+        <Ueberdeckend InstrName="LM Sifa"/>
+        <Ueberdeckend InstrName="LM/Taster Fahrtrichtung"/>
+        <Ueberdeckend InstrName="Nothalt"/>
+        <Ueberdeckend InstrName="Sifa"/>
+        <Ueberdeckend InstrName="Signalbeleuchtung"/>
+        <Ueberdeckend InstrName="Spiegel"/>
+        <Ueberdeckend InstrName="Tempomat"/>
+        <Ueberdeckend InstrName="Zugfunk_ZusiDisplay"/>
+        <Ueberdeckend InstrName="Diagnosedisplay_ZusiDisplay"/>
+        <InstrPkt2 X="0.5671476137624861" Y="0.9437661857195708"/>
+        <InstrPkt3 X="1.0" Y="0.9437661857195708"/>
+        <InstrPkt4 X="1.0" Y="0.5937846836847946"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG rechts unten 2" Vorkomma="2">
+        <InstrPkt1 X="0.8501664816870145" Y="0.9437661857195708"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.001953125" Uur="0.529296875" Vol="0.849609375" Vur="0.998046875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Sifa"/>
+        <InstrPkt2 X="0.8501664816870145" Y="1.0"/>
+        <InstrPkt3 X="1.0" Y="1.0"/>
+        <InstrPkt4 X="1.0" Y="0.9437661857195708"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG Mikrofon" Vorkomma="2">
+        <InstrPkt1 X="0.2760821309655938" Y="0.5534591194968553"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.82275390625" Vol="0.5380859375" Vur="0.59130859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.2760821309655938" Y="0.5937846836847946"/>
+        <InstrPkt3 X="0.30965593784683687" Y="0.5937846836847946"/>
+        <InstrPkt4 X="0.30965593784683687" Y="0.5534591194968553"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG Scheibenwischer" Vorkomma="2">
+        <InstrPkt1 X="0.8867924528301887" Y="0.4831668516463189"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.962890625" Vol="0.6005859375" Vur="0.74658203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8867924528301887" Y="0.5937846836847946"/>
+        <InstrPkt3 X="1.0" Y="0.5937846836847946"/>
+        <InstrPkt4 X="1.0" Y="0.4831668516463189"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="Ebula links" MaxBildNr="1" PhysikGroesse="140" Vorkomma="2">
+        <InstrPkt1 X="0.7955049944506104" Y="0.6703662597114317"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.00390625" Uur="1.0" Vol="0.00390625" Vur="0.978515625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-4.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.7955049944506104" Y="0.854975952645209"/>
+        <InstrPkt3 X="0.9370144284128746" Y="0.854975952645209"/>
+        <InstrPkt4 X="0.9370144284128746" Y="0.6703662597114317"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="Ebula rechts" MaxBildNr="1" PhysikGroesse="140" Vorkomma="2">
+        <InstrPkt1 X="0.9370144284128746" Y="0.6703662597114317"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0078125" Uur="0.318359375" Vol="0.00390625" Vur="0.978515625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.9370144284128746" Y="0.854975952645209"/>
+        <InstrPkt3 X="0.9811320754716981" Y="0.854975952645209"/>
+        <InstrPkt4 X="0.9811320754716981" Y="0.6703662597114317"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="GSM-R" MaxBildNr="1" PhysikGroesse="140" Vorkomma="2">
+        <InstrPkt1 X="0.0244173140954495" Y="0.6699963004069552"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.525390625" Uur="0.962890625" Vol="0.962890625" Vur="0.025390625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.0244173140954495" Y="0.7528671846096929"/>
+        <InstrPkt3 X="0.15760266370699222" Y="0.7528671846096929"/>
+        <InstrPkt4 X="0.15760266370699222" Y="0.6699963004069552"/>
+        <Font/>
+      </Melder>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="3.6" InstrName="Tachozeiger" PhysikGroesse="139" Traegheit="3">
+        <InstrPkt1 X="0.5" Y="0.7336293007769146"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.93408203125" Uur="0.94482421875" Vol="0.7890625" Vur="0.9990234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="DEUTA Tacho"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0354" ZeigerWinkel="1.0891"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0353" ZeigerWert="10" ZeigerWinkel="1.3675"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.035" ZeigerWert="20" ZeigerWinkel="1.6523"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0343" ZeigerWert="30" ZeigerWinkel="1.9321"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0336" ZeigerWert="40" ZeigerWinkel="2.2206"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.033" ZeigerWert="50" ZeigerWinkel="2.5326"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0326" ZeigerWert="60" ZeigerWinkel="2.8335"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0321" ZeigerWert="70" ZeigerWinkel="3.1416"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.032" ZeigerWert="80" ZeigerWinkel="3.4704"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0329" ZeigerWert="90" ZeigerWinkel="3.7807"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0334" ZeigerWert="100" ZeigerWinkel="4.086"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.034" ZeigerWert="110" ZeigerWinkel="4.3708"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0346" ZeigerWert="120" ZeigerWinkel="4.6609"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0349" ZeigerWert="130" ZeigerWinkel="4.9525"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0352" ZeigerWert="140" ZeigerWinkel="5.2077"/>
+      </Zeigerinstrument>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="3.6" InstrName="AFB-Zeiger" PhysikGroesse="23" Traegheit="3">
+        <InstrPkt1 X="0.5" Y="0.7336293007769146"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9208984375" Uur="0.931640625" Vol="0.7890625" Vur="0.9990234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0355" ZeigerWinkel="1.0165"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0353" ZeigerWert="10" ZeigerWinkel="1.3675"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.035" ZeigerWert="20" ZeigerWinkel="1.6523"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0343" ZeigerWert="30" ZeigerWinkel="1.9321"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0336" ZeigerWert="40" ZeigerWinkel="2.2206"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.033" ZeigerWert="50" ZeigerWinkel="2.5326"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0326" ZeigerWert="60" ZeigerWinkel="2.8335"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0321" ZeigerWert="70" ZeigerWinkel="3.1416"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.032" ZeigerWert="80" ZeigerWinkel="3.4704"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0329" ZeigerWert="90" ZeigerWinkel="3.7807"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0334" ZeigerWert="100" ZeigerWinkel="4.086"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.034" ZeigerWert="110" ZeigerWinkel="4.3708"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0346" ZeigerWert="120" ZeigerWinkel="4.6609"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0349" ZeigerWert="130" ZeigerWinkel="4.9525"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0352" ZeigerWert="140" ZeigerWinkel="5.2077"/>
+      </Zeigerinstrument>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="1" InstrName="HLL-Zeiger" PhysikGroesse="3" Traegheit="3">
+        <InstrPkt1 X="0.36847946725860153" Y="0.733999260081391"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9482421875" Uur="0.97265625" Vol="0.865234375" Vur="0.99951171875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0207" ZeigerWinkel="0.8608"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0211" ZeigerWert="1" ZeigerWinkel="1.1572"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="2" ZeigerWinkel="1.5287"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0204" ZeigerWert="3" ZeigerWinkel="1.9145"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="4" ZeigerWinkel="2.3213"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="5" ZeigerWinkel="2.733"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0197" ZeigerWert="6" ZeigerWinkel="3.1271"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.02" ZeigerWert="7" ZeigerWinkel="3.5606"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="8" ZeigerWinkel="3.9478"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.021" ZeigerWert="9" ZeigerWinkel="4.3188"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0205" ZeigerWert="10" ZeigerWinkel="4.6894"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="11" ZeigerWinkel="5.0751"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0188" ZeigerWert="12" ZeigerWinkel="5.472"/>
+      </Zeigerinstrument>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="1" InstrName="HBL-Zeiger" PhysikGroesse="4" Traegheit="3">
+        <InstrPkt1 X="0.3690344062153163" Y="0.7347391786903441"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.974609375" Uur="0.9990234375" Vol="0.865234375" Vur="0.99951171875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="HLL-Zeiger"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0207" ZeigerWinkel="0.8608"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0211" ZeigerWert="1" ZeigerWinkel="1.1572"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="2" ZeigerWinkel="1.5287"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0204" ZeigerWert="3" ZeigerWinkel="1.9145"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="4" ZeigerWinkel="2.3213"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="5" ZeigerWinkel="2.733"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0197" ZeigerWert="6" ZeigerWinkel="3.1271"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.02" ZeigerWert="7" ZeigerWinkel="3.5606"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="8" ZeigerWinkel="3.9478"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.021" ZeigerWert="9" ZeigerWinkel="4.3188"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0205" ZeigerWert="10" ZeigerWinkel="4.6894"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="11" ZeigerWinkel="5.0751"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0188" ZeigerWert="12" ZeigerWinkel="5.472"/>
+      </Zeigerinstrument>
+      <Melder DunkelFarbe="004B4B4B" Faktor="1" Farbe="FFFFFFFF" InstrName="DEUTA Tacho" Vorkomma="2">
+        <InstrPkt1 X="0.49250832408435075" Y="0.7236403995560489"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88916015625" Uur="0.91552734375" Vol="0.560546875" Vur="0.5869140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.49250832408435075" Y="0.7436182019977803"/>
+        <InstrPkt3 X="0.5074916759156493" Y="0.7436182019977803"/>
+        <InstrPkt4 X="0.5074916759156493" Y="0.7236403995560489"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Zugart O" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4284128745837958" Y="0.6400295967443581"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82373046875" Uur="0.84375" Vol="0.56103515625" Vur="0.57958984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4284128745837958" Y="0.6540880503144654"/>
+        <InstrPkt3 X="0.4397891231964484" Y="0.6540880503144654"/>
+        <InstrPkt4 X="0.4397891231964484" Y="0.6400295967443581"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Zugart M" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.416204217536071" Y="0.6396596374398816"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8447265625" Uur="0.86474609375" Vol="0.56103515625" Vur="0.57958984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.416204217536071" Y="0.6537180910099889"/>
+        <InstrPkt3 X="0.42758046614872364" Y="0.6537180910099889"/>
+        <InstrPkt4 X="0.42758046614872364" Y="0.6396596374398816"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Zugart U" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4034406215316315" Y="0.6396596374398816"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.86572265625" Uur="0.88720703125" Vol="0.56103515625" Vur="0.580078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4034406215316315" Y="0.6540880503144654"/>
+        <InstrPkt3 X="0.4156492785793563" Y="0.6540880503144654"/>
+        <InstrPkt4 X="0.4156492785793563" Y="0.6396596374398816"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Befehl" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4037180910099889" Y="0.6555678875323714"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82373046875" Uur="0.84326171875" Vol="0.580078125" Vur="0.59814453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4037180910099889" Y="0.6692563817980022"/>
+        <InstrPkt3 X="0.41481687014428414" Y="0.6692563817980022"/>
+        <InstrPkt4 X="0.41481687014428414" Y="0.6555678875323714"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB 500 Hz" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4156492785793563" Y="0.6551979282278949"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.84423828125" Uur="0.8642578125" Vol="0.58056640625" Vur="0.59912109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4156492785793563" Y="0.6692563817980022"/>
+        <InstrPkt3 X="0.42702552719200887" Y="0.6692563817980022"/>
+        <InstrPkt4 X="0.42702552719200887" Y="0.6551979282278949"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB 1000 Hz" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4281354051054384" Y="0.6551979282278949"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.865234375" Uur="0.88525390625" Vol="0.5810546875" Vur="0.599609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4281354051054384" Y="0.6692563817980022"/>
+        <InstrPkt3 X="0.43951165371809103" Y="0.6692563817980022"/>
+        <InstrPkt4 X="0.43951165371809103" Y="0.6551979282278949"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM/Taster Fahrtrichtung" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5610432852386238" Y="0.6955234924158342"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.326171875" Uur="0.4609375" Vol="0.095703125" Vur="0.611328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.326171875" Uur="0.4609375" Vol="0.00390625" Vur="0.51953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5610432852386238" Y="0.7931927487976322"/>
+        <InstrPkt3 X="0.5801886792452831" Y="0.7931927487976322"/>
+        <InstrPkt4 X="0.5801886792452831" Y="0.6955234924158342"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Haltewunsch" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.32935627081021085" Y="0.634110247872734"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88525390625" Uur="0.91552734375" Vol="0.5380859375" Vur="0.55908203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.32935627081021085" Y="0.6500184979652238"/>
+        <InstrPkt3 X="0.3465593784683685" Y="0.6500184979652238"/>
+        <InstrPkt4 X="0.3465593784683685" Y="0.634110247872734"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Schienenbremse" MaxBildNr="1" PhysikGroesse="29" Vorkomma="2">
+        <InstrPkt1 X="0.6539955604883463" Y="0.6344802071772105"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.91650390625" Uur="0.947265625" Vol="0.5380859375" Vur="0.55810546875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6539955604883463" Y="0.6496485386607473"/>
+        <InstrPkt3 X="0.6714761376248612" Y="0.6496485386607473"/>
+        <InstrPkt4 X="0.6714761376248612" Y="0.6344802071772105"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Federspeicherbremse" MaxBildNr="1" PhysikGroesse="86" Vorkomma="2">
+        <InstrPkt1 X="0.5854605993340732" Y="0.6962634110247873"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9482421875" Uur="0.978515625" Vol="0.5380859375" Vur="0.55859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Federspeicher"/>
+        <InstrPkt2 X="0.5854605993340732" Y="0.7118017018128006"/>
+        <InstrPkt3 X="0.6026637069922308" Y="0.7118017018128006"/>
+        <InstrPkt4 X="0.6026637069922308" Y="0.6962634110247873"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Bremse angelegt" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.6775804661487237" Y="0.6344802071772105"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.91650390625" Uur="0.94677734375" Vol="0.560546875" Vur="0.58056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6775804661487237" Y="0.6496485386607473"/>
+        <InstrPkt3 X="0.6947835738068813" Y="0.6496485386607473"/>
+        <InstrPkt4 X="0.6947835738068813" Y="0.6344802071772105"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Bremse geloest" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.7006104328523862" Y="0.6344802071772105"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.94775390625" Uur="0.97900390625" Vol="0.560546875" Vur="0.58056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.7006104328523862" Y="0.6496485386607473"/>
+        <InstrPkt3 X="0.7183684794672586" Y="0.6496485386607473"/>
+        <InstrPkt4 X="0.7183684794672586" Y="0.6344802071772105"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Sifa" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.5382907880133185" Y="0.6359600443951166"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.91650390625" Uur="0.943359375" Vol="0.58154296875" Vur="0.5986328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5382907880133185" Y="0.6489086200517943"/>
+        <InstrPkt3 X="0.5535516093229744" Y="0.6489086200517943"/>
+        <InstrPkt4 X="0.5535516093229744" Y="0.6359600443951166"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Tueren geschlossen" MaxBildNr="1" TCPEbene4="00000002" TCPTyp="1" Vorkomma="2">
+        <InstrPkt1 X="0.17896781354051056" Y="0.8786533481317055"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.802734375" Vol="0.74853515625" Vur="0.77099609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.17896781354051056" Y="0.8956714761376249"/>
+        <InstrPkt3 X="0.201165371809101" Y="0.8956714761376249"/>
+        <InstrPkt4 X="0.201165371809101" Y="0.8786533481317055"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Tueren rechts offen" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.15732519422863486" Y="0.8912319644839067"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8037109375" Uur="0.8447265625" Vol="0.74853515625" Vur="0.77880859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.15732519422863486" Y="0.9141694413614503"/>
+        <InstrPkt3 X="0.18063263041065483" Y="0.9141694413614503"/>
+        <InstrPkt4 X="0.18063263041065483" Y="0.8912319644839067"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Tueren links offen" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.11459489456159823" Y="0.9078801331853497"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.845703125" Uur="0.88525390625" Vol="0.74853515625" Vur="0.7802734375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.11459489456159823" Y="0.9319274879763226"/>
+        <InstrPkt3 X="0.13706992230854606" Y="0.9319274879763226"/>
+        <InstrPkt4 X="0.13706992230854606" Y="0.9078801331853497"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM/Taster Fst ein" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.30022197558268593" Y="0.681465038845727"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82373046875" Uur="0.86865234375" Vol="0.5380859375" Vur="0.55908203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88671875" Uur="0.931640625" Vol="0.74853515625" Vur="0.76953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.30022197558268593" Y="0.6973732889382168"/>
+        <InstrPkt3 X="0.3257491675915649" Y="0.6973732889382168"/>
+        <InstrPkt4 X="0.3257491675915649" Y="0.681465038845727"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM/Taster Tueren zwangsschliessen" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.13568257491675917" Y="0.89937106918239"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9326171875" Uur="0.974609375" Vol="0.74853515625" Vur="0.78125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.13568257491675917" Y="0.924158342582316"/>
+        <InstrPkt3 X="0.1595449500554939" Y="0.924158342582316"/>
+        <InstrPkt4 X="0.1595449500554939" Y="0.89937106918239"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Fahrschalter" MaxBildNr="13" Vorkomma="2">
+        <InstrPkt1 X="0.7031076581576027" Y="0.804661487236404"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6123046875" Uur="0.8271484375" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.4033203125" Uur="0.6181640625" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.1982421875" Uur="0.4130859375" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7509765625" Uur="0.9658203125" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.55859375" Uur="0.7734375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.3740234375" Uur="0.5888671875" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.189453125" Uur="0.404296875" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.3486328125" Vur="0.693359375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6259765625" Uur="0.8408203125" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.421875" Uur="0.63671875" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2138671875" Uur="0.4287109375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.7031076581576027" Y="0.9352571217166111"/>
+        <InstrPkt3 X="0.7641509433962265" Y="0.9352571217166111"/>
+        <InstrPkt4 X="0.7641509433962265" Y="0.804661487236404"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="PZB Befehl" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.27164261931187567" Y="0.8790233074361821"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.078125" Uur="0.1533203125" Vol="0.6953125" Vur="0.796875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.12890625" Uur="0.2041015625" Vol="0.65625" Vur="0.7578125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.27164261931187567" Y="0.9174990751017388"/>
+        <InstrPkt3 X="0.293007769145394" Y="0.9174990751017388"/>
+        <InstrPkt4 X="0.293007769145394" Y="0.8790233074361821"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="PZB Frei" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.29994450610432855" Y="0.8790233074361821"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9365234375" Uur="1.0" Vol="0.5048828125" Vur="0.603515625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.0634765625" Vol="0.6552734375" Vur="0.75390625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.29994450610432855" Y="0.9163891971883092"/>
+        <InstrPkt3 X="0.3179800221975583" Y="0.9163891971883092"/>
+        <InstrPkt4 X="0.3179800221975583" Y="0.8790233074361821"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="PZB Wachsam" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.32241953385127636" Y="0.8682944876063633"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8359375" Uur="0.931640625" Vol="0.3076171875" Vur="0.4453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.3271484375" Uur="0.4228515625" Vol="0.6484375" Vur="0.7861328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.32241953385127636" Y="0.9204587495375509"/>
+        <InstrPkt3 X="0.34961154273029965" Y="0.9204587495375509"/>
+        <InstrPkt4 X="0.34961154273029965" Y="0.8682944876063633"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Tuerschalter" MaxBildNr="3" Vorkomma="2">
+        <InstrPkt1 X="0.11043285238623751" Y="0.8501664816870145"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.17578125" Uur="0.314453125" Vol="0.3486328125" Vur="0.458984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.201171875" Uur="0.33984375" Vol="0.458984375" Vur="0.5693359375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.33984375" Uur="0.478515625" Vol="0.4599609375" Vur="0.5703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2861328125" Uur="0.4248046875" Vol="0.3486328125" Vur="0.458984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.11043285238623751" Y="0.8919718830928598"/>
+        <InstrPkt3 X="0.14983351831298558" Y="0.8919718830928598"/>
+        <InstrPkt4 X="0.14983351831298558" Y="0.8501664816870145"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Beleuchtung Fuehrerraum" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8354605993340732" Y="0.8657047724750278"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5087890625" Uur="0.5966796875" Vol="0.3076171875" Vur="0.4169921875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.4189453125" Uur="0.5068359375" Vol="0.3486328125" Vur="0.4580078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5771484375" Uur="0.6650390625" Vol="0.3486328125" Vur="0.4580078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8354605993340732" Y="0.9071402145763966"/>
+        <InstrPkt3 X="0.8604328523862376" Y="0.9071402145763966"/>
+        <InstrPkt4 X="0.8604328523862376" Y="0.8657047724750278"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Beleuchtung innen" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8634850166481687" Y="0.8764335923048465"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7158203125" Uur="0.8037109375" Vol="0.306640625" Vur="0.4189453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.48046875" Uur="0.568359375" Vol="0.4453125" Vur="0.5576171875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7841796875" Uur="0.8720703125" Vol="0.3486328125" Vur="0.4609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8634850166481687" Y="0.9189789123196448"/>
+        <InstrPkt3 X="0.888457269700333" Y="0.9189789123196448"/>
+        <InstrPkt4 X="0.888457269700333" Y="0.8764335923048465"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Beschallung" MaxBildNr="4" Vorkomma="2">
+        <InstrPkt1 X="0.31048834628190897" Y="0.8187199408065113"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6025390625" Uur="0.6669921875" Vol="0.75" Vur="0.8486328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.935546875" Uur="1.0" Vol="0.609375" Vur="0.7080078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.935546875" Uur="1.0" Vol="0.3037109375" Vur="0.40234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.830078125" Uur="0.89453125" Vol="0.2060546875" Vur="0.3046875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6396484375" Uur="0.7041015625" Vol="0.4599609375" Vur="0.55859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.31048834628190897" Y="0.8560858305586385"/>
+        <InstrPkt3 X="0.32880133185349614" Y="0.8560858305586385"/>
+        <InstrPkt4 X="0.32880133185349614" Y="0.8187199408065113"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Federspeicher" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5857380688124306" Y="0.7081021087680355"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.53515625" Uur="0.6142578125" Vol="0.6552734375" Vur="0.841796875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5966796875" Uur="0.67578125" Vol="0.6015625" Vur="0.7880859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.53125" Uur="0.6103515625" Vol="0.8505859375" Vur="1.037109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5857380688124306" Y="0.7787643359230485"/>
+        <InstrPkt3 X="0.6082130965593785" Y="0.7787643359230485"/>
+        <InstrPkt4 X="0.6082130965593785" Y="0.7081021087680355"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Horn" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.22169811320754718" Y="0.8620051794302627"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2060546875" Uur="0.32421875" Vol="0.693359375" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6181640625" Uur="0.736328125" Vol="0.693359375" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.22169811320754718" Y="0.9197188309285979"/>
+        <InstrPkt3 X="0.25527192008879024" Y="0.9197188309285979"/>
+        <InstrPkt4 X="0.25527192008879024" Y="0.8620051794302627"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Lampenpruefung" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8079911209766926" Y="0.8553459119496856"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.21484375" Uur="0.3046875" Vol="0.6396484375" Vur="0.7470703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.560546875" Uur="0.650390625" Vol="0.4599609375" Vur="0.5673828125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.9326171875" Vol="0.5546875" Vur="0.662109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8079911209766926" Y="0.8960414354421014"/>
+        <InstrPkt3 X="0.8335183129855716" Y="0.8960414354421014"/>
+        <InstrPkt4 X="0.8335183129855716" Y="0.8553459119496856"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Sanden" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.2702552719200888" Y="0.8187199408065113"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.53125" Uur="0.6005859375" Vol="0.7509765625" Vur="0.8486328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9306640625" Uur="1.0" Vol="0.404296875" Vur="0.501953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.912109375" Vol="0.748046875" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.2702552719200888" Y="0.855715871254162"/>
+        <InstrPkt3 X="0.28995560488346284" Y="0.855715871254162"/>
+        <InstrPkt4 X="0.28995560488346284" Y="0.8187199408065113"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Scheibenwischer" MaxBildNr="4" Vorkomma="2">
+        <InstrPkt1 X="0.3634850166481687" Y="0.8187199408065113"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.47265625" Uur="0.529296875" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.943359375" Uur="1.0" Vol="0.2099609375" Vur="0.3056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.943359375" Uur="1.0" Vol="0.7099609375" Vur="0.8056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88671875" Uur="0.943359375" Vol="0.1025390625" Vur="0.1982421875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.21484375" Uur="0.271484375" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.3634850166481687" Y="0.854975952645209"/>
+        <InstrPkt3 X="0.3795782463928968" Y="0.854975952645209"/>
+        <InstrPkt4 X="0.3795782463928968" Y="0.8187199408065113"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Schienenbremse" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.6834073251942286" Y="0.7166111727709952"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9365234375" Uur="0.998046875" Vol="0.30859375" Vur="0.453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.470703125" Uur="0.5322265625" Vol="0.62890625" Vur="0.7734375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5361328125" Uur="0.59765625" Vol="0.6298828125" Vur="0.7744140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6834073251942286" Y="0.7713651498335183"/>
+        <InstrPkt3 X="0.7008879023307436" Y="0.7713651498335183"/>
+        <InstrPkt4 X="0.7008879023307436" Y="0.7166111727709952"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Signalbeleuchtung" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8923418423973363" Y="0.8875323714391417"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.0859375" Vol="0.67578125" Vur="0.7900390625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.9287109375" Vol="0.439453125" Vur="0.5537109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6767578125" Uur="0.7626953125" Vol="0.5810546875" Vur="0.6953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8923418423973363" Y="0.9308176100628931"/>
+        <InstrPkt3 X="0.9167591564927858" Y="0.9308176100628931"/>
+        <InstrPkt4 X="0.9167591564927858" Y="0.8875323714391417"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Spiegel" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.6234739178690344" Y="0.7166111727709952"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7060546875" Uur="0.759765625" Vol="0.419921875" Vur="0.564453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.41015625" Uur="0.4638671875" Vol="0.625" Vur="0.76953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9443359375" Uur="0.998046875" Vol="0.0" Vur="0.14453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6234739178690344" Y="0.7713651498335183"/>
+        <InstrPkt3 X="0.6387347391786904" Y="0.7713651498335183"/>
+        <InstrPkt4 X="0.6387347391786904" Y="0.7166111727709952"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Tempomat" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5593784683684795" Y="0.8187199408065113"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.373046875" Uur="0.4208984375" Vol="0.7451171875" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8955078125" Uur="0.943359375" Vol="0.193359375" Vur="0.2939453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.890625" Vol="0.1025390625" Vur="0.203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5593784683684795" Y="0.8568257491675916"/>
+        <InstrPkt3 X="0.5729744728079911" Y="0.8568257491675916"/>
+        <InstrPkt4 X="0.5729744728079911" Y="0.8187199408065113"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Retarder" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.4298002219755827" Y="0.8194598594154643"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.4228515625" Uur="0.470703125" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2734375" Uur="0.3212890625" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.3232421875" Uur="0.37109375" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4298002219755827" Y="0.855715871254162"/>
+        <InstrPkt3 X="0.44339622641509435" Y="0.855715871254162"/>
+        <InstrPkt4 X="0.44339622641509435" Y="0.8194598594154643"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Luftpumpen/Getriebe" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5088790233074362" Y="0.8187199408065113"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.880859375" Uur="0.9208984375" Vol="0.3046875" Vur="0.4052734375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8837890625" Uur="0.923828125" Vol="0.0" Vur="0.1005859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.8828125" Vol="0.0" Vur="0.1005859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5088790233074362" Y="0.8568257491675916"/>
+        <InstrPkt3 X="0.5202552719200888" Y="0.8568257491675916"/>
+        <InstrPkt4 X="0.5202552719200888" Y="0.8187199408065113"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Sifa" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.9217536071032186" Y="0.9149093599704032"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.83935546875" Vol="0.94189453125" Vur="1.0">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.9217536071032186" Y="0.9589345172031076"/>
+        <InstrPkt3 X="0.9647613762486127" Y="0.9589345172031076"/>
+        <InstrPkt4 X="0.9647613762486127" Y="0.9149093599704032"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Dichtheitsprobe Bremsabschluss" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.6642619311875694" Y="0.6629670736219015"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82568359375" Uur="0.88671875" Vol="0.8427734375" Vur="0.93994140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.82470703125" Vol="0.84375" Vur="0.94091796875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Schienenbremse"/>
+        <InstrPkt2 X="0.6642619311875694" Y="0.7365889752127266"/>
+        <InstrPkt3 X="0.6989456159822419" Y="0.7365889752127266"/>
+        <InstrPkt4 X="0.6989456159822419" Y="0.6629670736219015"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Nothalt" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.6992230854605993" Y="0.6592674805771365"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.84033203125" Uur="0.89990234375" Vol="0.94091796875" Vur="0.9990234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6992230854605993" Y="0.703292637809841"/>
+        <InstrPkt3 X="0.7330743618201998" Y="0.703292637809841"/>
+        <InstrPkt4 X="0.7330743618201998" Y="0.6592674805771365"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Tacho-Nachtbeleuchtung" Vorkomma="2">
+        <InstrPkt1 X="0.4583795782463929" Y="0.6785053644099149"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8076171875" Uur="0.9560546875" Vol="0.11279296875" Vur="0.255859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+          <EinzelTextur Uol="0.701171875" Uur="0.998046875" Vol="0.7109375" Vur="0.9970703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="AFB-Zeiger"/>
+        <Ueberdeckend InstrName="Tachozeiger"/>
+        <InstrPkt2 X="0.4583795782463929" Y="0.7869034406215316"/>
+        <InstrPkt3 X="0.5427302996670367" Y="0.7869034406215316"/>
+        <InstrPkt4 X="0.5427302996670367" Y="0.6785053644099149"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Manometer-Nachtbeleuchtung" Vorkomma="2">
+        <InstrPkt1 X="0.3443396226415094" Y="0.7021827598964114"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.60693359375" Uur="0.6923828125" Vol="0.14404296875" Vur="0.22509765625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+          <EinzelTextur Uol="0.8271484375" Uur="0.998046875" Vol="0.5625" Vur="0.724609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="HBL-Zeiger"/>
+        <Ueberdeckend InstrName="HLL-Zeiger"/>
+        <InstrPkt2 X="0.3443396226415094" Y="0.7635960044395117"/>
+        <InstrPkt3 X="0.39289678135405104" Y="0.7635960044395117"/>
+        <InstrPkt4 X="0.39289678135405104" Y="0.7021827598964114"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFFFFFFF" Faktor="1" Farbe="FFFFFFFF" InstrName="3D-Fenster" MaxBildNr="-1" PhysikGroesse="22" Vorkomma="2">
+        <InstrPkt1 X="0.0" Y="0.0"/>
+        <Ueberdeckend InstrName="HG links"/>
+        <Ueberdeckend InstrName="HG rechts oben"/>
+        <Ueberdeckend InstrName="HG Mikrofon"/>
+        <Ueberdeckend InstrName="HG Scheibenwischer"/>
+        <Ueberdeckend InstrName="Infotext Digitaluhr"/>
+        <Ueberdeckend InstrName="Infotext Digitaluhr Test"/>
+        <InstrPkt2 X="0.0" Y="0.6655567887532371"/>
+        <InstrPkt3 X="1.0" Y="0.6655567887532371"/>
+        <InstrPkt4 X="1.0" Y="0.0"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00FFFFFF" Faktor="1" Farbe="00FFFFFF" Infotext="1" InstrName="Infotext Digitaluhr" MaxBildNr="-1" PhysikGroesse="35" Vorkomma="8">
+        <InstrPkt1 X="0.0752" Y="0.0065"/>
+        <InstrPkt2 X="0.0752" Y="0.0326"/>
+        <InstrPkt3 X="0.1533" Y="0.0326"/>
+        <InstrPkt4 X="0.1533" Y="0.0065"/>
+        <Font Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Schriften\Arial_20.font.xml"/>
+      </Melder>
+      <Melder DunkelFarbe="FFFFFFFF" Farbe="FFFFFFFF" InstrName="Diagnosedisplay_ZusiDisplay" ZusiDisplayAuswahl="TDD_RS1" ZusiDisplayMaster="1">
+        <InstrPkt1 X="0.8153062254061144" Y="0.642451148555477"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur>
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-diagnosedisplay-dummy.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.768807605076485" Y="0.810564750920877"/>
+        <InstrPkt3 X="0.9615011098779135" Y="0.8846651868294487"/>
+        <InstrPkt4 X="1.008298859852689" Y="0.6968015336494804"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFFFFFFF" Farbe="FFFFFFFF" InstrName="Zugfunk_ZusiDisplay" Vorkomma="2" ZusiDisplayAuswahl="ZUGFUNK_MTRS">
+        <InstrPkt1 X="-0.029064927857935626" Y="0.6908065112837588"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur>
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-zugfunk-dummy.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="-0.0017152658662092624" Y="0.8061749571183533"/>
+        <InstrPkt3 X="0.18691037735849056" Y="0.7448668146503885"/>
+        <InstrPkt4 X="0.16158375120850965" Y="0.6412199064841149"/>
+        <Font/>
+      </Melder>
+    </Grafik>
+    <Grafik>
+      <RenderFlags TexVoreinstellung="2"/>
+      <Grunddaten FtdQualitaet="1" GrafikName="Standardansicht 16:9">
+        <p X="-1.5" Z="2.8419"/>
+        <lookat X="10" Z="2.8419"/>
+        <up Z="10"/>
+      </Grunddaten>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG rechts unten 1" PhysikGroesse="40" Vorkomma="2">
+        <InstrPkt1 X="0.0" Y="0.0"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="-1.994140625" Uur="1.525390625" Vol="-1.088134765625" Vur="0.8916015625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.0" Y="1.0"/>
+        <InstrPkt3 X="1.0" Y="1.0"/>
+        <InstrPkt4 X="1.0" Y="0.0"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG links" Vorkomma="2">
+        <InstrPkt1 X="0.0" Y="0.5121469971636453"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0009765625" Uur="0.9990234375" Vol="0.0009765625" Vur="0.48388671875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="DEUTA Tacho"/>
+        <Ueberdeckend InstrName="GSM-R"/>
+        <Ueberdeckend InstrName="Horn"/>
+        <Ueberdeckend InstrName="LM Haltewunsch"/>
+        <Ueberdeckend InstrName="LM PZB 1000 Hz"/>
+        <Ueberdeckend InstrName="LM PZB 500 Hz"/>
+        <Ueberdeckend InstrName="LM PZB Befehl"/>
+        <Ueberdeckend InstrName="LM PZB Zugart M"/>
+        <Ueberdeckend InstrName="LM PZB Zugart O"/>
+        <Ueberdeckend InstrName="LM PZB Zugart U"/>
+        <Ueberdeckend InstrName="LM Tueren geschlossen"/>
+        <Ueberdeckend InstrName="LM Tueren links offen"/>
+        <Ueberdeckend InstrName="LM Tueren rechts offen"/>
+        <Ueberdeckend InstrName="LM/Taster Fahrtrichtung"/>
+        <Ueberdeckend InstrName="LM/Taster Fst ein"/>
+        <Ueberdeckend InstrName="LM/Taster Tueren zwangsschliessen"/>
+        <Ueberdeckend InstrName="Luftpumpen/Getriebe"/>
+        <Ueberdeckend InstrName="Manometer-Nachtbeleuchtung"/>
+        <Ueberdeckend InstrName="PZB Befehl"/>
+        <Ueberdeckend InstrName="PZB Frei"/>
+        <Ueberdeckend InstrName="PZB Wachsam"/>
+        <Ueberdeckend InstrName="Retarder"/>
+        <Ueberdeckend InstrName="Sanden"/>
+        <Ueberdeckend InstrName="Scheibenwischer"/>
+        <Ueberdeckend InstrName="Tacho-Nachtbeleuchtung"/>
+        <Ueberdeckend InstrName="Tempomat"/>
+        <Ueberdeckend InstrName="Tuerschalter"/>
+        <InstrPkt2 X="0.0" Y="1.0"/>
+        <InstrPkt3 X="0.5671476137624861" Y="1.0"/>
+        <InstrPkt4 X="0.5671476137624861" Y="0.5121469971636453"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG rechts oben" Vorkomma="2">
+        <InstrPkt1 X="0.5671476137624861" Y="0.5121469971636453"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0009765625" Uur="0.7626953125" Vol="0.5380859375" Vur="1.0">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Beleuchtung Fuehrerraum"/>
+        <Ueberdeckend InstrName="Beleuchtung innen"/>
+        <Ueberdeckend InstrName="Beschallung"/>
+        <Ueberdeckend InstrName="Dichtheitsprobe Bremsabschluss"/>
+        <Ueberdeckend InstrName="Ebula links"/>
+        <Ueberdeckend InstrName="Ebula rechts"/>
+        <Ueberdeckend InstrName="Fahrschalter"/>
+        <Ueberdeckend InstrName="Federspeicher"/>
+        <Ueberdeckend InstrName="Lampenpruefung"/>
+        <Ueberdeckend InstrName="LM Bremse angelegt"/>
+        <Ueberdeckend InstrName="LM Bremse geloest"/>
+        <Ueberdeckend InstrName="LM Federspeicherbremse"/>
+        <Ueberdeckend InstrName="LM Schienenbremse"/>
+        <Ueberdeckend InstrName="LM Sifa"/>
+        <Ueberdeckend InstrName="LM/Taster Fahrtrichtung"/>
+        <Ueberdeckend InstrName="Nothalt"/>
+        <Ueberdeckend InstrName="Sifa"/>
+        <Ueberdeckend InstrName="Signalbeleuchtung"/>
+        <Ueberdeckend InstrName="Spiegel"/>
+        <Ueberdeckend InstrName="Tempomat"/>
+        <Ueberdeckend InstrName="Zugfunk_ZusiDisplay"/>
+        <Ueberdeckend InstrName="Diagnosedisplay_ZusiDisplay"/>
+        <InstrPkt2 X="0.5671476137624861" Y="0.9787889998766802"/>
+        <InstrPkt3 X="1.0" Y="0.9787889998766802"/>
+        <InstrPkt4 X="1.0" Y="0.5121469971636453"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG rechts unten 2" Vorkomma="2">
+        <InstrPkt1 X="0.8501664816870145" Y="0.9787889998766802"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.001953125" Uur="0.529296875" Vol="0.849609375" Vur="0.8916015625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Sifa"/>
+        <InstrPkt2 X="0.8501664816870145" Y="1.0"/>
+        <InstrPkt3 X="1.0" Y="1.0"/>
+        <InstrPkt4 X="1.0" Y="0.9787889998766802"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG Mikrofon" Vorkomma="2">
+        <InstrPkt1 X="0.2760821309655938" Y="0.4583795782463929"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.82275390625" Vol="0.5380859375" Vur="0.59130859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.2760821309655938" Y="0.5121469971636453"/>
+        <InstrPkt3 X="0.30965593784683687" Y="0.5121469971636453"/>
+        <InstrPkt4 X="0.30965593784683687" Y="0.4583795782463929"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="HG Scheibenwischer" Vorkomma="2">
+        <InstrPkt1 X="0.8867924528301887" Y="0.3646565544456776"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.962890625" Vol="0.6005859375" Vur="0.74658203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8867924528301887" Y="0.5121469971636453"/>
+        <InstrPkt3 X="1.0" Y="0.5121469971636453"/>
+        <InstrPkt4 X="1.0" Y="0.3646565544456776"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="Ebula links" MaxBildNr="1" PhysikGroesse="140" Vorkomma="2">
+        <InstrPkt1 X="0.7955049944506104" Y="0.6142557651991615"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.00390625" Uur="1.0" Vol="0.00390625" Vur="0.978515625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-4.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.7955049944506104" Y="0.8604020224441978"/>
+        <InstrPkt3 X="0.9370144284128746" Y="0.8604020224441978"/>
+        <InstrPkt4 X="0.9370144284128746" Y="0.6142557651991615"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="Ebula rechts" MaxBildNr="1" PhysikGroesse="140" Vorkomma="2">
+        <InstrPkt1 X="0.9370144284128746" Y="0.6142557651991615"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0078125" Uur="0.318359375" Vol="0.00390625" Vur="0.978515625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.9370144284128746" Y="0.8604020224441978"/>
+        <InstrPkt3 X="0.9811320754716981" Y="0.8604020224441978"/>
+        <InstrPkt4 X="0.9811320754716981" Y="0.6142557651991615"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="GSM-R" MaxBildNr="1" PhysikGroesse="140" Vorkomma="2">
+        <InstrPkt1 X="0.0244173140954495" Y="0.6137624861265261"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.525390625" Uur="0.962890625" Vol="0.962890625" Vur="0.025390625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.0244173140954495" Y="0.724256998396843"/>
+        <InstrPkt3 X="0.15760266370699222" Y="0.724256998396843"/>
+        <InstrPkt4 X="0.15760266370699222" Y="0.6137624861265261"/>
+        <Font/>
+      </Melder>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="3.6" InstrName="Tachozeiger" PhysikGroesse="139" Traegheit="3">
+        <InstrPkt1 X="0.5" Y="0.6986064866198052"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.93408203125" Uur="0.94482421875" Vol="0.7890625" Vur="0.9990234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="DEUTA Tacho"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0354" ZeigerWinkel="1.0891"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0353" ZeigerWert="10" ZeigerWinkel="1.3675"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.035" ZeigerWert="20" ZeigerWinkel="1.6523"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0343" ZeigerWert="30" ZeigerWinkel="1.9321"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0336" ZeigerWert="40" ZeigerWinkel="2.2206"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.033" ZeigerWert="50" ZeigerWinkel="2.5326"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0326" ZeigerWert="60" ZeigerWinkel="2.8335"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0321" ZeigerWert="70" ZeigerWinkel="3.1416"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.032" ZeigerWert="80" ZeigerWinkel="3.4704"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0329" ZeigerWert="90" ZeigerWinkel="3.7807"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0334" ZeigerWert="100" ZeigerWinkel="4.086"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.034" ZeigerWert="110" ZeigerWinkel="4.3708"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0346" ZeigerWert="120" ZeigerWinkel="4.6609"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0349" ZeigerWert="130" ZeigerWinkel="4.9525"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0352" ZeigerWert="140" ZeigerWinkel="5.2077"/>
+      </Zeigerinstrument>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="3.6" InstrName="AFB-Zeiger" PhysikGroesse="23" Traegheit="3">
+        <InstrPkt1 X="0.5" Y="0.6986064866198052"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9208984375" Uur="0.931640625" Vol="0.7890625" Vur="0.9990234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0355" ZeigerWinkel="1.0165"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0353" ZeigerWert="10" ZeigerWinkel="1.3675"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.035" ZeigerWert="20" ZeigerWinkel="1.6523"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0343" ZeigerWert="30" ZeigerWinkel="1.9321"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0336" ZeigerWert="40" ZeigerWinkel="2.2206"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.033" ZeigerWert="50" ZeigerWinkel="2.5326"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0326" ZeigerWert="60" ZeigerWinkel="2.8335"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0321" ZeigerWert="70" ZeigerWinkel="3.1416"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.032" ZeigerWert="80" ZeigerWinkel="3.4704"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0329" ZeigerWert="90" ZeigerWinkel="3.7807"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0334" ZeigerWert="100" ZeigerWinkel="4.086"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.034" ZeigerWert="110" ZeigerWinkel="4.3708"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0346" ZeigerWert="120" ZeigerWinkel="4.6609"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0349" ZeigerWert="130" ZeigerWinkel="4.9525"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0031" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0352" ZeigerWert="140" ZeigerWinkel="5.2077"/>
+      </Zeigerinstrument>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="1" InstrName="HLL-Zeiger" PhysikGroesse="3" Traegheit="3">
+        <InstrPkt1 X="0.36847946725860153" Y="0.6990997656924405"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9482421875" Uur="0.97265625" Vol="0.865234375" Vur="0.99951171875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0207" ZeigerWinkel="0.8608"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0211" ZeigerWert="1" ZeigerWinkel="1.1572"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="2" ZeigerWinkel="1.5287"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0204" ZeigerWert="3" ZeigerWinkel="1.9145"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="4" ZeigerWinkel="2.3213"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="5" ZeigerWinkel="2.733"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0197" ZeigerWert="6" ZeigerWinkel="3.1271"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.02" ZeigerWert="7" ZeigerWinkel="3.5606"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="8" ZeigerWinkel="3.9478"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.021" ZeigerWert="9" ZeigerWinkel="4.3188"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0205" ZeigerWert="10" ZeigerWinkel="4.6894"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="11" ZeigerWinkel="5.0751"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0188" ZeigerWert="12" ZeigerWinkel="5.472"/>
+      </Zeigerinstrument>
+      <Zeigerinstrument DunkelFarbe="FFC8C8C8" Faktor="1" InstrName="HBL-Zeiger" PhysikGroesse="4" Traegheit="3">
+        <InstrPkt1 X="0.3690344062153163" Y="0.7000863238377112"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.974609375" Uur="0.9990234375" Vol="0.865234375" Vur="0.99951171875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="HLL-Zeiger"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0207" ZeigerWinkel="0.8608"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0211" ZeigerWert="1" ZeigerWinkel="1.1572"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="2" ZeigerWinkel="1.5287"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0204" ZeigerWert="3" ZeigerWinkel="1.9145"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="4" ZeigerWinkel="2.3213"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="5" ZeigerWinkel="2.733"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0197" ZeigerWert="6" ZeigerWinkel="3.1271"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.02" ZeigerWert="7" ZeigerWinkel="3.5606"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0208" ZeigerWert="8" ZeigerWinkel="3.9478"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.021" ZeigerWert="9" ZeigerWinkel="4.3188"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0205" ZeigerWert="10" ZeigerWinkel="4.6894"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0196" ZeigerWert="11" ZeigerWinkel="5.0751"/>
+        <ZeigerStuetzpunkt ZeigerBreite="0.0069" ZeigerFarbe="FFFFFFFF" ZeigerLaenge="0.0188" ZeigerWert="12" ZeigerWinkel="5.472"/>
+      </Zeigerinstrument>
+      <Melder DunkelFarbe="004B4B4B" Faktor="1" Farbe="FFFFFFFF" InstrName="DEUTA Tacho" Vorkomma="2">
+        <InstrPkt1 X="0.49250832408435075" Y="0.6852879516586509"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88916015625" Uur="0.91552734375" Vol="0.560546875" Vur="0.5869140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.49250832408435075" Y="0.7119250215809594"/>
+        <InstrPkt3 X="0.5074916759156493" Y="0.7119250215809594"/>
+        <InstrPkt4 X="0.5074916759156493" Y="0.6852879516586509"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Zugart O" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4284128745837958" Y="0.5738068812430632"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82373046875" Uur="0.84375" Vol="0.56103515625" Vur="0.57958984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4284128745837958" Y="0.5925514860032063"/>
+        <InstrPkt3 X="0.4397891231964484" Y="0.5925514860032063"/>
+        <InstrPkt4 X="0.4397891231964484" Y="0.5738068812430632"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Zugart M" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.416204217536071" Y="0.5733136021704279"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8447265625" Uur="0.86474609375" Vol="0.56103515625" Vur="0.57958984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.416204217536071" Y="0.592058206930571"/>
+        <InstrPkt3 X="0.42758046614872364" Y="0.592058206930571"/>
+        <InstrPkt4 X="0.42758046614872364" Y="0.5733136021704279"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Zugart U" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4034406215316315" Y="0.5733136021704279"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.86572265625" Uur="0.88720703125" Vol="0.56103515625" Vur="0.580078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4034406215316315" Y="0.5925514860032063"/>
+        <InstrPkt3 X="0.4156492785793563" Y="0.5925514860032063"/>
+        <InstrPkt4 X="0.4156492785793563" Y="0.5733136021704279"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB Befehl" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4037180910099889" Y="0.5945246022937477"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82373046875" Uur="0.84326171875" Vol="0.580078125" Vur="0.59814453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4037180910099889" Y="0.6127759279812554"/>
+        <InstrPkt3 X="0.41481687014428414" Y="0.6127759279812554"/>
+        <InstrPkt4 X="0.41481687014428414" Y="0.5945246022937477"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB 500 Hz" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4156492785793563" Y="0.5940313232211123"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.84423828125" Uur="0.8642578125" Vol="0.58056640625" Vur="0.59912109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4156492785793563" Y="0.6127759279812554"/>
+        <InstrPkt3 X="0.42702552719200887" Y="0.6127759279812554"/>
+        <InstrPkt4 X="0.42702552719200887" Y="0.5940313232211123"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM PZB 1000 Hz" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.4281354051054384" Y="0.5940313232211123"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.865234375" Uur="0.88525390625" Vol="0.5810546875" Vur="0.599609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4281354051054384" Y="0.6127759279812554"/>
+        <InstrPkt3 X="0.43951165371809103" Y="0.6127759279812554"/>
+        <InstrPkt4 X="0.43951165371809103" Y="0.5940313232211123"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM/Taster Fahrtrichtung" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5610432852386238" Y="0.6477987421383647"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.326171875" Uur="0.4609375" Vol="0.095703125" Vur="0.611328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.326171875" Uur="0.4609375" Vol="0.00390625" Vur="0.51953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-5.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5610432852386238" Y="0.7780244173140954"/>
+        <InstrPkt3 X="0.5801886792452831" Y="0.7780244173140954"/>
+        <InstrPkt4 X="0.5801886792452831" Y="0.6477987421383647"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Haltewunsch" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.32935627081021085" Y="0.5659144160808978"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88525390625" Uur="0.91552734375" Vol="0.5380859375" Vur="0.55908203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.32935627081021085" Y="0.5871254162042175"/>
+        <InstrPkt3 X="0.3465593784683685" Y="0.5871254162042175"/>
+        <InstrPkt4 X="0.3465593784683685" Y="0.5659144160808978"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Schienenbremse" MaxBildNr="1" PhysikGroesse="29" Vorkomma="2">
+        <InstrPkt1 X="0.6539955604883463" Y="0.5664076951535331"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.91650390625" Uur="0.947265625" Vol="0.5380859375" Vur="0.55810546875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6539955604883463" Y="0.5866321371315822"/>
+        <InstrPkt3 X="0.6714761376248612" Y="0.5866321371315822"/>
+        <InstrPkt4 X="0.6714761376248612" Y="0.5664076951535331"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Federspeicherbremse" MaxBildNr="1" PhysikGroesse="86" Vorkomma="2">
+        <InstrPkt1 X="0.5854605993340732" Y="0.6487853002836355"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9482421875" Uur="0.978515625" Vol="0.5380859375" Vur="0.55859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Federspeicher"/>
+        <InstrPkt2 X="0.5854605993340732" Y="0.6695030213343199"/>
+        <InstrPkt3 X="0.6026637069922308" Y="0.6695030213343199"/>
+        <InstrPkt4 X="0.6026637069922308" Y="0.6487853002836355"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Bremse angelegt" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.6775804661487237" Y="0.5664076951535331"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.91650390625" Uur="0.94677734375" Vol="0.560546875" Vur="0.58056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6775804661487237" Y="0.5866321371315822"/>
+        <InstrPkt3 X="0.6947835738068813" Y="0.5866321371315822"/>
+        <InstrPkt4 X="0.6947835738068813" Y="0.5664076951535331"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Bremse geloest" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.7006104328523862" Y="0.5664076951535331"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.94775390625" Uur="0.97900390625" Vol="0.560546875" Vur="0.58056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.7006104328523862" Y="0.5866321371315822"/>
+        <InstrPkt3 X="0.7183684794672586" Y="0.5866321371315822"/>
+        <InstrPkt4 X="0.7183684794672586" Y="0.5664076951535331"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Sifa" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.5382907880133185" Y="0.5683808114440745"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.91650390625" Uur="0.943359375" Vol="0.58154296875" Vur="0.5986328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5382907880133185" Y="0.5856455789863115"/>
+        <InstrPkt3 X="0.5535516093229744" Y="0.5856455789863115"/>
+        <InstrPkt4 X="0.5535516093229744" Y="0.5683808114440745"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Tueren geschlossen" MaxBildNr="1" TCPEbene4="00000002" TCPTyp="1" Vorkomma="2">
+        <InstrPkt1 X="0.17896781354051056" Y="0.8919718830928598"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.802734375" Vol="0.74853515625" Vur="0.77099609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.17896781354051056" Y="0.9146627204340856"/>
+        <InstrPkt3 X="0.201165371809101" Y="0.9146627204340856"/>
+        <InstrPkt4 X="0.201165371809101" Y="0.8919718830928598"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Tueren rechts offen" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.15732519422863486" Y="0.9087433715624614"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8037109375" Uur="0.8447265625" Vol="0.74853515625" Vur="0.77880859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.15732519422863486" Y="0.9393266740658528"/>
+        <InstrPkt3 X="0.18063263041065483" Y="0.9393266740658528"/>
+        <InstrPkt4 X="0.18063263041065483" Y="0.9087433715624614"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM Tueren links offen" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.11459489456159823" Y="0.9309409298310519"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.845703125" Uur="0.88525390625" Vol="0.74853515625" Vur="0.7802734375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.11459489456159823" Y="0.9630040695523493"/>
+        <InstrPkt3 X="0.13706992230854606" Y="0.9630040695523493"/>
+        <InstrPkt4 X="0.13706992230854606" Y="0.9309409298310519"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM/Taster Fst ein" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.30022197558268593" Y="0.6290541373782217"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82373046875" Uur="0.86865234375" Vol="0.5380859375" Vur="0.55908203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88671875" Uur="0.931640625" Vol="0.74853515625" Vur="0.76953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.30022197558268593" Y="0.6502651375015415"/>
+        <InstrPkt3 X="0.3257491675915649" Y="0.6502651375015415"/>
+        <InstrPkt4 X="0.3257491675915649" Y="0.6290541373782217"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFC8C8C8" Faktor="1" Farbe="FFFFFFFF" InstrName="LM/Taster Tueren zwangsschliessen" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.13568257491675917" Y="0.919595511160439"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9326171875" Uur="0.974609375" Vol="0.74853515625" Vur="0.78125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.13568257491675917" Y="0.952645209027007"/>
+        <InstrPkt3 X="0.1595449500554939" Y="0.952645209027007"/>
+        <InstrPkt4 X="0.1595449500554939" Y="0.919595511160439"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Fahrschalter" MaxBildNr="13" Vorkomma="2">
+        <InstrPkt1 X="0.7031076581576027" Y="0.7933160685657911"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6123046875" Uur="0.8271484375" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.4033203125" Uur="0.6181640625" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.1982421875" Uur="0.4130859375" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.3466796875" Vur="0.69140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7509765625" Uur="0.9658203125" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.55859375" Uur="0.7734375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.3740234375" Uur="0.5888671875" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.189453125" Uur="0.404296875" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.3486328125" Vur="0.693359375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6259765625" Uur="0.8408203125" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.421875" Uur="0.63671875" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2138671875" Uur="0.4287109375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.21484375" Vol="0.0" Vur="0.3447265625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.7031076581576027" Y="0.9674435812060673"/>
+        <InstrPkt3 X="0.7641509433962265" Y="0.9674435812060673"/>
+        <InstrPkt4 X="0.7641509433962265" Y="0.7933160685657911"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="PZB Befehl" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.27164261931187567" Y="0.8924651621654951"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.078125" Uur="0.1533203125" Vol="0.6953125" Vur="0.796875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.12890625" Uur="0.2041015625" Vol="0.65625" Vur="0.7578125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.27164261931187567" Y="0.9437661857195708"/>
+        <InstrPkt3 X="0.293007769145394" Y="0.9437661857195708"/>
+        <InstrPkt4 X="0.293007769145394" Y="0.8924651621654951"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="PZB Frei" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.29994450610432855" Y="0.8924651621654951"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9365234375" Uur="1.0" Vol="0.5048828125" Vur="0.603515625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.0634765625" Vol="0.6552734375" Vur="0.75390625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.29994450610432855" Y="0.9422863485016648"/>
+        <InstrPkt3 X="0.3179800221975583" Y="0.9422863485016648"/>
+        <InstrPkt4 X="0.3179800221975583" Y="0.8924651621654951"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="PZB Wachsam" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.32241953385127636" Y="0.8781600690590702"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8359375" Uur="0.931640625" Vol="0.3076171875" Vur="0.4453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.3271484375" Uur="0.4228515625" Vol="0.6484375" Vur="0.7861328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.32241953385127636" Y="0.9477124183006536"/>
+        <InstrPkt3 X="0.34961154273029965" Y="0.9477124183006536"/>
+        <InstrPkt4 X="0.34961154273029965" Y="0.8781600690590702"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Tuerschalter" MaxBildNr="3" Vorkomma="2">
+        <InstrPkt1 X="0.11043285238623751" Y="0.8539893944999384"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.17578125" Uur="0.314453125" Vol="0.3486328125" Vur="0.458984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.201171875" Uur="0.33984375" Vol="0.458984375" Vur="0.5693359375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.33984375" Uur="0.478515625" Vol="0.4599609375" Vur="0.5703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2861328125" Uur="0.4248046875" Vol="0.3486328125" Vur="0.458984375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.11043285238623751" Y="0.9097299297077321"/>
+        <InstrPkt3 X="0.14983351831298558" Y="0.9097299297077321"/>
+        <InstrPkt4 X="0.14983351831298558" Y="0.8539893944999384"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Beleuchtung Fuehrerraum" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8354605993340732" Y="0.8747071155506227"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5087890625" Uur="0.5966796875" Vol="0.3076171875" Vur="0.4169921875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.4189453125" Uur="0.5068359375" Vol="0.3486328125" Vur="0.4580078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5771484375" Uur="0.6650390625" Vol="0.3486328125" Vur="0.4580078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8354605993340732" Y="0.9299543716857812"/>
+        <InstrPkt3 X="0.8604328523862376" Y="0.9299543716857812"/>
+        <InstrPkt4 X="0.8604328523862376" Y="0.8747071155506227"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Beleuchtung innen" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8634850166481687" Y="0.8890122086570478"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7158203125" Uur="0.8037109375" Vol="0.306640625" Vur="0.4189453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.48046875" Uur="0.568359375" Vol="0.4453125" Vur="0.5576171875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7841796875" Uur="0.8720703125" Vol="0.3486328125" Vur="0.4609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8634850166481687" Y="0.9457393020101122"/>
+        <InstrPkt3 X="0.888457269700333" Y="0.9457393020101122"/>
+        <InstrPkt4 X="0.888457269700333" Y="0.8890122086570478"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Beschallung" MaxBildNr="4" Vorkomma="2">
+        <InstrPkt1 X="0.31048834628190897" Y="0.8120606733259341"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6025390625" Uur="0.6669921875" Vol="0.75" Vur="0.8486328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.935546875" Uur="1.0" Vol="0.609375" Vur="0.7080078125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.935546875" Uur="1.0" Vol="0.3037109375" Vur="0.40234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.830078125" Uur="0.89453125" Vol="0.2060546875" Vur="0.3046875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6396484375" Uur="0.7041015625" Vol="0.4599609375" Vur="0.55859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.31048834628190897" Y="0.8618818596621038"/>
+        <InstrPkt3 X="0.32880133185349614" Y="0.8618818596621038"/>
+        <InstrPkt4 X="0.32880133185349614" Y="0.8120606733259341"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Federspeicher" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5857380688124306" Y="0.6645702306079665"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.53515625" Uur="0.6142578125" Vol="0.6552734375" Vur="0.841796875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5966796875" Uur="0.67578125" Vol="0.6015625" Vur="0.7880859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.53125" Uur="0.6103515625" Vol="0.8505859375" Vur="1.037109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5857380688124306" Y="0.7587865334813171"/>
+        <InstrPkt3 X="0.6082130965593785" Y="0.7587865334813171"/>
+        <InstrPkt4 X="0.6082130965593785" Y="0.6645702306079665"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Horn" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.22169811320754718" Y="0.8697743248242693"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2060546875" Uur="0.32421875" Vol="0.693359375" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6181640625" Uur="0.736328125" Vol="0.693359375" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.22169811320754718" Y="0.946725860155383"/>
+        <InstrPkt3 X="0.25527192008879024" Y="0.946725860155383"/>
+        <InstrPkt4 X="0.25527192008879024" Y="0.8697743248242693"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Lampenpruefung" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8079911209766926" Y="0.8608953015168331"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.21484375" Uur="0.3046875" Vol="0.6396484375" Vur="0.7470703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.560546875" Uur="0.650390625" Vol="0.4599609375" Vur="0.5673828125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.9326171875" Vol="0.5546875" Vur="0.662109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8079911209766926" Y="0.9151559995067209"/>
+        <InstrPkt3 X="0.8335183129855716" Y="0.9151559995067209"/>
+        <InstrPkt4 X="0.8335183129855716" Y="0.8608953015168331"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Sanden" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.2702552719200888" Y="0.8120606733259341"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.53125" Uur="0.6005859375" Vol="0.7509765625" Vur="0.8486328125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9306640625" Uur="1.0" Vol="0.404296875" Vur="0.501953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.912109375" Vol="0.748046875" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.2702552719200888" Y="0.8613885805894685"/>
+        <InstrPkt3 X="0.28995560488346284" Y="0.8613885805894685"/>
+        <InstrPkt4 X="0.28995560488346284" Y="0.8120606733259341"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Scheibenwischer" MaxBildNr="4" Vorkomma="2">
+        <InstrPkt1 X="0.3634850166481687" Y="0.8120606733259341"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.47265625" Uur="0.529296875" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.943359375" Uur="1.0" Vol="0.2099609375" Vur="0.3056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.943359375" Uur="1.0" Vol="0.7099609375" Vur="0.8056640625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.88671875" Uur="0.943359375" Vol="0.1025390625" Vur="0.1982421875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.21484375" Uur="0.271484375" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.3634850166481687" Y="0.8604020224441978"/>
+        <InstrPkt3 X="0.3795782463928968" Y="0.8604020224441978"/>
+        <InstrPkt4 X="0.3795782463928968" Y="0.8120606733259341"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Schienenbremse" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.6834073251942286" Y="0.6759156492785794"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9365234375" Uur="0.998046875" Vol="0.30859375" Vur="0.453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.470703125" Uur="0.5322265625" Vol="0.62890625" Vur="0.7734375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.5361328125" Uur="0.59765625" Vol="0.6298828125" Vur="0.7744140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6834073251942286" Y="0.7489209520286102"/>
+        <InstrPkt3 X="0.7008879023307436" Y="0.7489209520286102"/>
+        <InstrPkt4 X="0.7008879023307436" Y="0.6759156492785794"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Signalbeleuchtung" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.8923418423973363" Y="0.903810580836108"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.0" Uur="0.0859375" Vol="0.67578125" Vur="0.7900390625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.9287109375" Vol="0.439453125" Vur="0.5537109375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.6767578125" Uur="0.7626953125" Vol="0.5810546875" Vur="0.6953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.8923418423973363" Y="0.9615242323344432"/>
+        <InstrPkt3 X="0.9167591564927858" Y="0.9615242323344432"/>
+        <InstrPkt4 X="0.9167591564927858" Y="0.903810580836108"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Spiegel" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.6234739178690344" Y="0.6759156492785794"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.7060546875" Uur="0.759765625" Vol="0.419921875" Vur="0.564453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.41015625" Uur="0.4638671875" Vol="0.625" Vur="0.76953125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.9443359375" Uur="0.998046875" Vol="0.0" Vur="0.14453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6234739178690344" Y="0.7489209520286102"/>
+        <InstrPkt3 X="0.6387347391786904" Y="0.7489209520286102"/>
+        <InstrPkt4 X="0.6387347391786904" Y="0.6759156492785794"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Tempomat" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5593784683684795" Y="0.8120606733259341"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.373046875" Uur="0.4208984375" Vol="0.7451171875" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8955078125" Uur="0.943359375" Vol="0.193359375" Vur="0.2939453125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.890625" Vol="0.1025390625" Vur="0.203125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5593784683684795" Y="0.8628684178073746"/>
+        <InstrPkt3 X="0.5729744728079911" Y="0.8628684178073746"/>
+        <InstrPkt4 X="0.5729744728079911" Y="0.8120606733259341"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Retarder" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.4298002219755827" Y="0.8130472314712048"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.4228515625" Uur="0.470703125" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.2734375" Uur="0.3212890625" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.3232421875" Uur="0.37109375" Vol="0.75" Vur="0.845703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.4298002219755827" Y="0.8613885805894685"/>
+        <InstrPkt3 X="0.44339622641509435" Y="0.8613885805894685"/>
+        <InstrPkt4 X="0.44339622641509435" Y="0.8130472314712048"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Luftpumpen/Getriebe" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.5088790233074362" Y="0.8120606733259341"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.880859375" Uur="0.9208984375" Vol="0.3046875" Vur="0.4052734375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8837890625" Uur="0.923828125" Vol="0.0" Vur="0.1005859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8427734375" Uur="0.8828125" Vol="0.0" Vur="0.1005859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-2.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.5088790233074362" Y="0.8628684178073746"/>
+        <InstrPkt3 X="0.5202552719200888" Y="0.8628684178073746"/>
+        <InstrPkt4 X="0.5202552719200888" Y="0.8120606733259341"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Sifa" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.9217536071032186" Y="0.9403132322111234"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.83935546875" Vol="0.94189453125" Vur="1.0">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.9217536071032186" Y="0.9990134418547293"/>
+        <InstrPkt3 X="0.9647613762486127" Y="0.9990134418547293"/>
+        <InstrPkt4 X="0.9647613762486127" Y="0.9403132322111234"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Dichtheitsprobe Bremsabschluss" MaxBildNr="2" Vorkomma="2">
+        <InstrPkt1 X="0.6642619311875694" Y="0.6043901837464546"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.82568359375" Uur="0.88671875" Vol="0.8427734375" Vur="0.93994140625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.763671875" Uur="0.82470703125" Vol="0.84375" Vur="0.94091796875">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="Schienenbremse"/>
+        <InstrPkt2 X="0.6642619311875694" Y="0.7025527192008879"/>
+        <InstrPkt3 X="0.6989456159822419" Y="0.7025527192008879"/>
+        <InstrPkt4 X="0.6989456159822419" Y="0.6043901837464546"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Nothalt" MaxBildNr="1" Vorkomma="2">
+        <InstrPkt1 X="0.6992230854605993" Y="0.5994573930201011"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="1" Uur="1" Vol="1" Vur="1">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.84033203125" Uur="0.89990234375" Vol="0.94091796875" Vur="0.9990234375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.6992230854605993" Y="0.658157602663707"/>
+        <InstrPkt3 X="0.7330743618201998" Y="0.658157602663707"/>
+        <InstrPkt4 X="0.7330743618201998" Y="0.5994573930201011"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Tacho-Nachtbeleuchtung" Vorkomma="2">
+        <InstrPkt1 X="0.4583795782463929" Y="0.625107904797139"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.8076171875" Uur="0.9560546875" Vol="0.11279296875" Vur="0.255859375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+          <EinzelTextur Uol="0.701171875" Uur="0.998046875" Vol="0.7109375" Vur="0.9970703125">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="AFB-Zeiger"/>
+        <Ueberdeckend InstrName="Tachozeiger"/>
+        <InstrPkt2 X="0.4583795782463929" Y="0.7696386730792946"/>
+        <InstrPkt3 X="0.5427302996670367" Y="0.7696386730792946"/>
+        <InstrPkt4 X="0.5427302996670367" Y="0.625107904797139"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00191919" Faktor="1" Farbe="FFFFFFFF" InstrName="Manometer-Nachtbeleuchtung" Vorkomma="2">
+        <InstrPkt1 X="0.3443396226415094" Y="0.6566777654458009"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur Uol="0.60693359375" Uur="0.6923828125" Vol="0.14404296875" Vur="0.22509765625">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-1.dds"/>
+          </EinzelTextur>
+          <EinzelTextur Uol="0.8271484375" Uur="0.998046875" Vol="0.5625" Vur="0.724609375">
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-agilis-3.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <Ueberdeckend InstrName="HBL-Zeiger"/>
+        <Ueberdeckend InstrName="HLL-Zeiger"/>
+        <InstrPkt2 X="0.3443396226415094" Y="0.738562091503268"/>
+        <InstrPkt3 X="0.39289678135405104" Y="0.738562091503268"/>
+        <InstrPkt4 X="0.39289678135405104" Y="0.6566777654458009"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFFFFFFF" Faktor="1" Farbe="FFFFFFFF" InstrName="3D-Fenster" MaxBildNr="-1" PhysikGroesse="22" Vorkomma="2">
+        <InstrPkt1 X="0.0" Y="0.0"/>
+        <Ueberdeckend InstrName="HG links"/>
+        <Ueberdeckend InstrName="HG Mikrofon"/>
+        <Ueberdeckend InstrName="HG rechts oben"/>
+        <Ueberdeckend InstrName="HG Scheibenwischer"/>
+        <Ueberdeckend InstrName="Infotext Digitaluhr"/>
+        <InstrPkt2 X="0.0" Y="0.6078431372549019"/>
+        <InstrPkt3 X="1.0" Y="0.6078431372549019"/>
+        <InstrPkt4 X="1.0" Y="0.0"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="00FFFFFF" Faktor="1" Farbe="00FFFFFF" Infotext="1" InstrName="Infotext Digitaluhr" MaxBildNr="-1" PhysikGroesse="35" Vorkomma="8">
+        <InstrPkt1 X="0.0752" Y="0.0065"/>
+        <InstrPkt2 X="0.0752" Y="0.0326"/>
+        <InstrPkt3 X="0.1533" Y="0.0326"/>
+        <InstrPkt4 X="0.1533" Y="0.0065"/>
+        <Font Dateiname="RollingStock\Deutschland\Gemeinsame_Daten\Schriften\Arial_20.font.xml"/>
+      </Melder>
+      <Melder DunkelFarbe="FFFFFFFF" Farbe="FFFFFFFF" InstrName="Diagnosedisplay_ZusiDisplay" ZusiDisplayAuswahl="TDD_RS1" ZusiDisplayMaster="1">
+        <InstrPkt1 X="0.8153062254061144" Y="0.5770356169912219"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur>
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-diagnosedisplay-dummy.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="0.768807605076485" Y="0.8011870868117551"/>
+        <InstrPkt3 X="0.9615011098779135" Y="0.8999876680231841"/>
+        <InstrPkt4 X="1.008298859852689" Y="0.6495027971165597"/>
+        <Font/>
+      </Melder>
+      <Melder DunkelFarbe="FFFFFFFF" Farbe="FFFFFFFF" InstrName="Zugfunk_ZusiDisplay" Vorkomma="2" ZusiDisplayAuswahl="ZUGFUNK_MTRS">
+        <InstrPkt1 X="-0.029064927857935626" Y="0.6415094339622641"/>
+        <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
+          <EinzelTextur>
+            <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-zugfunk-dummy.dds"/>
+          </EinzelTextur>
+        </FstTextur>
+        <InstrPkt2 X="-0.0017152658662092624" Y="0.7953340284083902"/>
+        <InstrPkt3 X="0.18691037735849056" Y="0.7135898384511037"/>
+        <InstrPkt4 X="0.16158375120850965" Y="0.5753939608960723"/>
+        <Font/>
+      </Melder>
+    </Grafik>
+    <Grafik>
+      <RenderFlags TexVoreinstellung="1"/>
+      <Grunddaten FtdHauptrichtung="2" FtdLfdNr="1" GrafikName="Fensterblick links">
+        <p X="-2" Y="2.2" Z="2.7"/>
+        <lookat X="-11" Y="2.2" Z="2.7"/>
+        <up X="-2" Y="2.2" Z="12"/>
+      </Grunddaten>
+      <Melder DunkelFarbe="FFFFFFFF" Faktor="1" Farbe="FFFFFFFF" InstrName="Fenster" MaxBildNr="-1" PhysikGroesse="22" Vorkomma="2">
+        <InstrPkt1/>
+        <InstrPkt2 Y="1"/>
+        <InstrPkt3 X="1" Y="1"/>
+        <InstrPkt4 X="1"/>
+        <Font/>
+      </Melder>
+    </Grafik>
+    <Grafik>
+      <RenderFlags TexVoreinstellung="1"/>
+      <Grunddaten FtdHauptrichtung="3" FtdLfdNr="1" GrafikName="Fensterblick rechts">
+        <p X="-2" Y="-2.2" Z="2.7"/>
+        <lookat X="-11" Y="-2.2" Z="2.7"/>
+        <up X="-2" Y="-2.2" Z="12"/>
+      </Grunddaten>
+      <Melder DunkelFarbe="FFFFFFFF" Faktor="1" Farbe="FFFFFFFF" InstrName="Fenster" MaxBildNr="-1" PhysikGroesse="22" Vorkomma="2">
+        <InstrPkt1/>
+        <InstrPkt2 Y="1"/>
+        <InstrPkt3 X="1" Y="1"/>
+        <InstrPkt4 X="1"/>
+        <Font/>
+      </Melder>
+    </Grafik>
+    <Grafik>
+      <RenderFlags TexVoreinstellung="1"/>
+      <Grunddaten FtdHauptrichtung="1" FtdLfdNr="1" GrafikName="Streckenblick">
+        <p X="-1.5" Z="2.8419"/>
+        <lookat X="8.5" Z="2.8419"/>
+        <up X="-1.5" Z="12.8419"/>
+      </Grunddaten>
+      <Melder DunkelFarbe="FFFFFFFF" Faktor="1" Farbe="FFFFFFFF" InstrName="Fenster" MaxBildNr="-1" PhysikGroesse="22" Vorkomma="2">
+        <InstrPkt1/>
+        <InstrPkt2 Y="1"/>
+        <InstrPkt3 X="1" Y="1"/>
+        <InstrPkt4 X="1"/>
+        <Font/>
+      </Melder>
+    </Grafik>
+    <Grafik>
+      <RenderFlags TexVoreinstellung="1"/>
+      <Grunddaten FtdHauptrichtung="1" FtdLfdNr="2" GrafikName="Blick zum Hauptsignal">
+        <p X="-0.5" Y="-0.4" Z="2.8"/>
+        <lookat X="9.3036" Y="-0.4" Z="5.7621"/>
+        <up X="-2.4625" Y="-0.4" Z="12.6055"/>
+      </Grunddaten>
+      <Melder DunkelFarbe="FFFFFFFF" Faktor="1" Farbe="FFFFFFFF" InstrName="Fenster" MaxBildNr="-1" PhysikGroesse="22" Vorkomma="2">
+        <InstrPkt1/>
+        <InstrPkt2 Y="1"/>
+        <InstrPkt3 X="1" Y="1"/>
+        <InstrPkt4 X="1"/>
+        <Font/>
+      </Melder>
+    </Grafik>
+  </Fuehrerstand>
+</Zusi>
