@@ -1535,15 +1535,15 @@
         <Font/>
       </Melder>
       <Melder DunkelFarbe="FFFFFFFF" Farbe="FFFFFFFF" InstrName="Zugfunk_ZusiDisplay" Vorkomma="2" ZusiDisplayAuswahl="ZUGFUNK_MTRS">
-        <InstrPkt1 X="-0.029064927857935626" Y="0.6908065112837588"/>
+        <InstrPkt1 X="-0.024972253052164262" Y="0.6965100580879463"/>
         <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
           <EinzelTextur>
             <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-zugfunk-dummy.dds"/>
           </EinzelTextur>
         </FstTextur>
-        <InstrPkt2 X="-0.0017152658662092624" Y="0.8061749571183533"/>
-        <InstrPkt3 X="0.18691037735849056" Y="0.7448668146503885"/>
-        <InstrPkt4 X="0.16158375120850965" Y="0.6412199064841149"/>
+        <InstrPkt2 X="-0.0024972253052164264" Y="0.8015168331483536"/>
+        <InstrPkt3 X="0.1859970346804332" Y="0.7411518216882862"/>
+        <InstrPkt4 X="0.16176470588235295" Y="0.6459489456159823"/>
         <Font/>
       </Melder>
     </Grafik>
@@ -2742,15 +2742,15 @@
         <Font/>
       </Melder>
       <Melder DunkelFarbe="FFFFFFFF" Farbe="FFFFFFFF" InstrName="Zugfunk_ZusiDisplay" Vorkomma="2" ZusiDisplayAuswahl="ZUGFUNK_MTRS">
-        <InstrPkt1 X="-0.029064927857935626" Y="0.6415094339622641"/>
+        <InstrPkt1 X="-0.024972253052164262" Y="0.6491141630345141"/>
         <FstTextur ALPHATESTENABLE="1" DESTBLEND="6" SRCBLEND="5">
           <EinzelTextur>
             <Datei Dateiname="RollingStock\Deutschland\Epoche5\Dieseltriebwagen\RegioShuttle\Fuehrerstand\rs1-zugfunk-dummy.dds"/>
           </EinzelTextur>
         </FstTextur>
-        <InstrPkt2 X="-0.0017152658662092624" Y="0.7953340284083902"/>
-        <InstrPkt3 X="0.18691037735849056" Y="0.7135898384511037"/>
-        <InstrPkt4 X="0.16158375120850965" Y="0.5753939608960723"/>
+        <InstrPkt2 X="-0.0024972253052164264" Y="0.7891231964483907"/>
+        <InstrPkt3 X="0.1859970346804332" Y="0.708636514501634"/>
+        <InstrPkt4 X="0.16176470588235295" Y="0.5816993464052288"/>
         <Font/>
       </Melder>
     </Grafik>
